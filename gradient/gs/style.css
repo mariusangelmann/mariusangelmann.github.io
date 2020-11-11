@@ -1,28 +1,46 @@
-.gradient {
-    background: linear-gradient(226deg, #4776e6, #8e54e9);
-    background-size: 400% 400%;
-    -webkit-animation: AnimationName 0s ease infinite;
-    -moz-animation: AnimationName 0s ease infinite;
-    -o-animation: AnimationName 0s ease infinite;
-    animation: AnimationName 0s ease infinite;
+body {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(-45deg, #4776e6, #8e54e9, #8e54e9, #4776e6 );
+	background-size: 400% 400%;
+	-webkit-animation: gradientBG 5s ease infinite;
+	        animation: gradientBG 5s ease infinite;
 }
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+.container {
+	width: 100%;
+	position: absolute;
+	top: 35%;
+	text-align: center;
 }
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+h1 {
+	font-weight: 900;
 }
-@-o-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+a {
+	text-decoration: none;
+	color: #212121;
 }
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+@-webkit-keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
